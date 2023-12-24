@@ -1,0 +1,123 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff; /* Set background color to white */
+  color: #000; /* Set text color to black */
+}
+
+header {
+  background-color: #000; /* Set header background color to black */
+  padding: 10px;
+}
+
+header h1 {
+  color: #fff; /* Set header text color to white */
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Set navigation link color to white */
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #000; /* Set footer background color to black */
+  text-align: center;
+  padding: 10px;
+}
+
+/* Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Center the content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Add a simple fade-in animation to the main content */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  animation: fadeIn 2s ease-in;
+}
+
+/* Center the text in the footer */
+footer {
+  background-color: #000; /* Set footer background color to black */
+  text-align: center;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000; /* Set header background color to black */
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+/* Style the button with theme colors */
+button {
+  background-color: #000; /* Set button background color to black */
+  color: #fff; /* Set button text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid transparent; /* Add transparent border */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+  background-color: #fff; /* Set button background color to white on hover */
+  color: #000; /* Set button text color to black on hover */
+  border-color: #000; /* Set border color to black on hover */
+}
